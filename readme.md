@@ -1,6 +1,6 @@
 # redis-stream
 
-**[Redis 5 Streams](https://redis.io/topics/streams-intro) as [readable & writable Node streams](https://nodejs.org/api/stream.html).**
+**[Redis 5 Streams](https://redis.io/topics/streams-intro) as [readable & writable Node streams](https://nodejs.org/api/stream.html).** Plus a command line interface.
 
 [![npm version](https://img.shields.io/npm/v/redis-stream.svg)](https://www.npmjs.com/package/redis-stream)
 [![build status](https://api.travis-ci.org/derhuerst/redis-stream.svg?branch=master)](https://travis-ci.org/derhuerst/redis-stream)
@@ -16,7 +16,29 @@ npm install @derhuerst/redis-stream
 ```
 
 
-## Usage
+## Command line usage
+
+```shell
+Usage:
+    write-into-redis-stream <stream-name>
+Examples:
+    echo '{"user": "jane", "text": "hey!"}' | write-into-redis-stream chat-msgs
+```
+
+```shell
+Usage:
+    read-from-redis-stream <stream-name> [--history] [--live [--waitTimoout <ms>]] [--limit <n>]
+Options:
+	--live             Wait for newly added items? Default: true
+	--waitTimeout  -t  How long to wait for newly added items. Default: Infinity
+	--history          Read all past items from the stream? Default: false
+	--limit        -l  Maximum number of items to read. Default: Infinity
+Examples:
+    read-from-redis-stream chat-msgs --live --limit 1000
+```
+
+
+## Usage with JavaScript
 
 ### Writing to a Redis Stream
 

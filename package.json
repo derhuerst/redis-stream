@@ -1,12 +1,18 @@
 {
 	"name": "@derhuerst/redis-stream",
-	"description": "Redis 5 Streams as readable & writable Node streams.",
+	"description": "Redis 5 Streams as readable & writable Node streams. Plus a CLI.",
 	"version": "1.0.0",
 	"main": "index.js",
+	"bin": {
+		"read-from-redis-stream": "./cli-read.js",
+		"write-into-redis-stream": "./cli-write.js"
+	},
 	"files": [
 		"index.js",
 		"reader.js",
 		"writer.js",
+		"cli-read.js",
+		"cli-write.js",
 		"example.js"
 	],
 	"keywords": [
@@ -15,7 +21,8 @@
 		"xadd",
 		"xread",
 		"readable",
-		"writable"
+		"writable",
+		"cli"
 	],
 	"author": "Jannis R <mail@jannisr.de>",
 	"homepage": "https://github.com/derhuerst/redis-stream",
@@ -26,6 +33,8 @@
 		"node": ">=8"
 	},
 	"dependencies": {
+		"mri": "^1.1.4",
+		"ndjson": "^1.5.0"
 	},
 	"devDependencies": {
 		"redis": "^2.8.0",
