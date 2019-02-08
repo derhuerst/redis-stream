@@ -28,6 +28,7 @@
 	"dependencies": {
 	},
 	"devDependencies": {
+		"redis": "^2.8.0",
 		"tap-min": "^1.2.2",
 		"tape": "^4.9.1"
 	},

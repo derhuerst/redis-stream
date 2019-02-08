@@ -18,9 +18,48 @@ npm install @derhuerst/redis-stream
 
 ## Usage
 
+### Writing to a Redis Stream
+
 ```js
-todo
+const {createClient} = require('redis')
+const createWriter = require('@derhuerst/redis-stream/writer')
+
+const redis = createClient()
+const writer = createWriter(redis, 'some-stream-name')
+writer.once('finish', () => redis.quit())
+writer.on('error', console.error)
+
+writer.write({foo: 'bar'})
+writer.end({hey: 'there!'})
 ```
+
+### Reading from a Redis Stream
+
+```js
+const {createClient} = require('redis')
+const createReader = require('@derhuerst/redis-stream/reader')
+
+const redis = createClient()
+const reader = createReader(redis, 'some-stream-name')
+reader.on('data', console.log)
+reader.on('error', console.error)
+```
+
+
+## API
+
+### `createWriter(redis, streamName)`
+
+Returns a [readable stream](https://nodejs.org/api/stream.html#stream_writable_streams) in [object mode](https://nodejs.org/api/stream.html#stream_object_mode).
+
+### `createReader(redis, streamName, opt = {})`
+
+Returns a [readable stream](https://nodejs.org/api/stream.html#stream_readable_streams) in [object mode](https://nodejs.org/api/stream.html#stream_object_mode). `opt` may be an object with the following entries:
+
+- `live`: Wait for newly added items? Default: `true`
+- `waitTimeout`: How long to wait for newly added items. Default: `Infinity`
+- `history`: Read all past items from the stream? Default: `false`
+- `limit`: Maximum number of items to read. Default: `Infinity`
 
 
 ## Contributing
