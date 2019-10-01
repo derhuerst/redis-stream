@@ -3,6 +3,7 @@
 	"description": "Redis 5 Streams as readable & writable Node streams. Plus a CLI.",
 	"version": "1.0.0",
 	"main": "index.js",
+	"types": "index.d.ts",
 	"bin": {
 		"read-from-redis-stream": "./cli-read.js",
 		"write-into-redis-stream": "./cli-write.js"
