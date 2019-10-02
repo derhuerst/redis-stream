@@ -10,6 +10,7 @@
 	},
 	"files": [
 		"index.js",
+		"index.d.ts",
 		"reader.js",
 		"writer.js",
 		"cli-read.js",
