@@ -18,14 +18,14 @@ npm install @derhuerst/redis-stream
 
 ## Command line usage
 
-```shell
+```
 Usage:
     write-into-redis-stream <stream-name>
 Examples:
     echo '{"user": "jane", "text": "hey!"}' | write-into-redis-stream chat-msgs
 ```
 
-```shell
+```
 Usage:
     read-from-redis-stream <stream-name> [--history] [--live [--waitTimoout <ms>]] [--limit <n>]
 Options:
