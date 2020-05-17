@@ -1,7 +1,7 @@
 {
 	"name": "@derhuerst/redis-stream",
 	"description": "Redis 5 Streams as readable & writable Node streams. Plus a CLI.",
-	"version": "1.1.1",
+	"version": "2.0.0",
 	"main": "index.js",
 	"types": "index.d.ts",
 	"bin": {
@@ -40,7 +40,7 @@
 		{"type": "patreon", "url": "https://patreon.com/derhuerst"}
 	],
 	"engines": {
-		"node": ">=8"
+		"node": ">=10"
 	},
 	"dependencies": {
 		"mri": "^1.1.4",
