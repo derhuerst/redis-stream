@@ -2,11 +2,12 @@
 
 **[Redis 5 Streams](https://redis.io/topics/streams-intro) as [readable & writable Node streams](https://nodejs.org/api/stream.html).** Plus a command line interface.
 
-[![npm version](https://img.shields.io/npm/v/redis-stream.svg)](https://www.npmjs.com/package/redis-stream)
+[![npm version](https://img.shields.io/npm/v/@derhuerst/redis-stream.svg)](https://www.npmjs.com/package/@derhuerst/redis-stream)
 [![build status](https://api.travis-ci.org/derhuerst/redis-stream.svg?branch=master)](https://travis-ci.org/derhuerst/redis-stream)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/redis-stream.svg)
+![minimum Node.js version](https://img.shields.io/node/v/@derhuerst/redis-stream.svg)
 [![chat with me on Gitter](https://img.shields.io/badge/chat%20with%20me-on%20gitter-512e92.svg)](https://gitter.im/derhuerst)
-[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
+[![support me via GitHub Sponsors](https://img.shields.io/badge/support%20me-donate-fa7664.svg)](https://github.com/sponsors/derhuerst)
 
 
 ## Installation

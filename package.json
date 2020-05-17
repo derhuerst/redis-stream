@@ -1,7 +1,7 @@
 {
 	"name": "@derhuerst/redis-stream",
 	"description": "Redis 5 Streams as readable & writable Node streams. Plus a CLI.",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"main": "index.js",
 	"types": "index.d.ts",
 	"bin": {
