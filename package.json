@@ -15,7 +15,10 @@
 		"writer.js",
 		"cli-read.js",
 		"cli-write.js",
-		"example.js"
+		"example.js",
+		"LICENSE",
+		"LICENSE-PROSPERITY.md",
+		"LICENSE-APACHE"
 	],
 	"keywords": [
 		"redis",
@@ -30,7 +33,12 @@
 	"homepage": "https://github.com/derhuerst/redis-stream",
 	"repository": "derhuerst/redis-stream",
 	"bugs": "https://github.com/derhuerst/redis-stream/issues",
-	"license": "ISC",
+	"license": "(Apache-2.0 AND Prosperity-3.0.0)",
+	"funding": [
+		{"type": "License Zero", "url": "https://licensezero.com/offers/dc2ee53d-4ef4-47b7-a48b-ffb42377620b"},
+		{"type": "github", "url": "https://github.com/sponsors/derhuerst"},
+		{"type": "patreon", "url": "https://patreon.com/derhuerst"}
+	],
 	"engines": {
 		"node": ">=8"
 	},
