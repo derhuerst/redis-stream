@@ -3,6 +3,13 @@ node_js:
   - 'stable'
   - 'lts/*'
   - '8'
+addons:
+  apt:
+    packages:
+    - redis-server
+script:
+  - (redis-server & )
+  - npm test
 cache: npm
 notifications:
   email:
