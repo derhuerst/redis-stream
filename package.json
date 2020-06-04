@@ -1,7 +1,7 @@
 {
 	"name": "@derhuerst/redis-stream",
 	"description": "Redis 5 Streams as readable & writable Node streams. Plus a CLI.",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"main": "index.js",
 	"types": "index.d.ts",
 	"bin": {
@@ -35,9 +35,18 @@
 	"bugs": "https://github.com/derhuerst/redis-stream/issues",
 	"license": "(Apache-2.0 AND Prosperity-3.0.0)",
 	"funding": [
-		{"type": "License Zero", "url": "https://licensezero.com/offers/dc2ee53d-4ef4-47b7-a48b-ffb42377620b"},
-		{"type": "github", "url": "https://github.com/sponsors/derhuerst"},
-		{"type": "patreon", "url": "https://patreon.com/derhuerst"}
+		{
+			"type": "License Zero",
+			"url": "https://licensezero.com/offers/dc2ee53d-4ef4-47b7-a48b-ffb42377620b"
+		},
+		{
+			"type": "github",
+			"url": "https://github.com/sponsors/derhuerst"
+		},
+		{
+			"type": "patreon",
+			"url": "https://patreon.com/derhuerst"
+		}
 	],
 	"engines": {
 		"node": ">=10"
